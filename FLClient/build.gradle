@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()               // no necesitas más repos
+}
+
+dependencies {
+    implementation 'org.hyperledger.fabric:fabric-gateway-java:2.2.9'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.17.+'
+    implementation 'org.slf4j:slf4j-simple:2.0.+'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.+'
+}
+
+java {
+    toolchain { languageVersion = JavaLanguageVersion.of(17) }
+}
+
+application {
+    mainClass = 'com.example.fl.FLClient'
+}
+
+test { useJUnitPlatform() }
+
