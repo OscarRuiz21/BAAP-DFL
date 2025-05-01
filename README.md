@@ -1,6 +1,3 @@
-Aquí tienes el contenido del archivo README:
-
-Markdown
 
 # Federated Learning on Hyperledger Fabric - Prototype v1
 
